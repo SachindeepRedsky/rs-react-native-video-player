@@ -1,0 +1,35 @@
+{
+  "name": "react-native-video-player-lib",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "react-native",
+    "video",
+    "video-player",
+    "react-native-video",
+    "media"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "description": "Custom video player library for React Native using react-native-video.",
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-native": "^0.80.0",
+    "react-native-video": "^6.15.0",
+    "@react-native-community/slider": "^4.5.7",
+    "react-native-orientation-locker": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+     "@types/node": "^24.0.3",
+    "typescript": "^5.8.3"
+  }
+}
