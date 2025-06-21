@@ -24,8 +24,6 @@ Supports fullscreen, minimization (mini-player), playback controls, video list, 
 | react-native-video              | ^6.15.0 |
 | @react-native-community/slider  | ^4.5.7  |
 | react-native-orientation-locker | ^1.7.0  |
-| @react-native/new-app-screen    | ^0.80.0 |
-
 
 ## 🚀 Installation
 --------------
@@ -39,8 +37,6 @@ Library installation:
 ```
 npm install react-native-video-player-lib
 ```
-
-
 
 ## 🛠️ Usage Example
 ----------------
