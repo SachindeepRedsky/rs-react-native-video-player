@@ -94,15 +94,6 @@ export default function App() {
 }
 ```
 
-## Explaination
-
-| Prop            | Type                 | Description                     |
-| --------------- | -------------------- | ------------------------------- |
-| videos          | `VideoItem[]`        | List of videos to show          |
-| onSelect        | `(video: VideoItem)` | Called when a video is selected |
-| selectedVideoId | `string`             | ID of the selected video        |
-| customStyles    | `object`             | Override styles (see below)     |
-
 ## 🎨 CustomStyles (VideoPlayer)
 These styles let you override internal styling.
 
@@ -120,21 +111,28 @@ customStyles = {
   timeTextFullscreen: TextStyle,
 }
 ```
-| Property             | Type      | Description                                   |
-| -------------------- | --------- | --------------------------------------------- |
-| `container`          | ViewStyle | Style for the outer video player container    |
-| `video`              | ViewStyle | Style for the video element itself            |
-| `controls`           | ViewStyle | Style for the control buttons container       |
-| `button`             | ViewStyle | Style for each individual control button      |
-| `title`              | TextStyle | Style for the video title                     |
-| `description`        | TextStyle | Style for the video description               |
-| `tag`                | TextStyle | Style for individual tags                     |
-| `slider`             | ViewStyle | Style for the progress slider                 |
-| `timeText`           | TextStyle | Style for time text under the slider (normal) |
-| `timeTextFullscreen` | TextStyle | Style for time text in fullscreen mode        |
+
+## Explaination
+
+| Prop                 | Type                   | Description                                   |
+| ---------------------| -----------------------| ----------------------------------------------|
+| `videos`             | `VideoItem[]`          | List of videos to show                        |
+| `onSelect`           | `(video: VideoItem)`   | Called when a video is selected               |
+| `selectedVideoId`    | `string`               | ID of the selected video                      |
+| `customStyles`       | `object`               | Override styles                               |
+| `container`          | `ViewStyle`            | Style for the outer video player container    |
+| `video`              | `ViewStyle`            | Style for the video element itself            |
+| `controls`           | `ViewStyle`            | Style for the control buttons container       |
+| `button`             | `ViewStyle`            | Style for each individual control button      |
+| `title`              | `TextStyle`            | Style for the video title                     |
+| `description`        | `TextStyle`            | Style for the video description               |
+| `tag`                | `TextStyle`            | Style for individual tags                     |
+| `slider`             | `ViewStyle`            | Style for the progress slider                 |
+| `timeText`           | `TextStyle`            | Style for time text under the slider (normal) |
+| `timeTextFullscreen` | `TextStyle`            | Style for time text in fullscreen mode        |
 
 
-## 🖼️ customIcons (VideoPlayer)
+## 🖼️ CustomIcons (VideoPlayer)
 Override default icons with your own.
 
 ```
