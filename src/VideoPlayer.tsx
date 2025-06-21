@@ -65,8 +65,6 @@ interface VideoPlayerProps {
   };
 }
 
-// const { PipHandlerModule } = NativeModules;
-
 const VideoPlayer: React.FC<VideoPlayerProps> = ({
   source,
   title = '',
@@ -152,11 +150,6 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({
       },
     })
   ).current;
-
-
-  // const enterPip = () => {
-  //   if (Platform.OS === 'android') PipHandlerModule?.enterPipMode();
-  // };
 
   const onLoad = (data: any) => setDuration(data.duration);
   const onProgress = (data: any) => setCurrentTime(data.currentTime);

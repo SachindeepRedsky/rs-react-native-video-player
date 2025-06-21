@@ -7,7 +7,6 @@ const SCREEN_WIDTH = Dimensions.get('window').width;
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 const MINI_WIDTH = 250;
 const MINI_HEIGHT = 150;
-// const { PipHandlerModule } = NativeModules;
 const VideoPlayer = ({ source, title = '', description = '', tags = [], onNext, onBack, onFullscreenChange, onClose, customStyles = {}, customIcons = {}, }) => {
     const playerRef = useRef(null);
     const [paused, setPaused] = useState(false);
@@ -72,9 +71,6 @@ const VideoPlayer = ({ source, title = '', description = '', tags = [], onNext, 
             }).start();
         },
     })).current;
-    // const enterPip = () => {
-    //   if (Platform.OS === 'android') PipHandlerModule?.enterPipMode();
-    // };
     const onLoad = (data) => setDuration(data.duration);
     const onProgress = (data) => setCurrentTime(data.currentTime);
     const seekTo = (time) => {
